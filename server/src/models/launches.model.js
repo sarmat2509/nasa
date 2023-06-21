@@ -5,7 +5,7 @@ const planets = require('./planets.mongo');
 
 const DEFAULT_FLIGHT_NUMBER = 100;
 
-async function getAllLaunches(page = 0, limit = 0){
+async function getAllLaunches(page, limit ){
 	return launches.find({}, {
 		'_id': 0,
 		'__v': 0
