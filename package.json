@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "server/index.js",
 	"scripts": {
+		"install": "npm install --prefix client && npm install --prefix server",
 		"server": "npm run watch --prefix server",
 		"client": "npm start --prefix client",
 		"watch": "npm run server & npm run client",
