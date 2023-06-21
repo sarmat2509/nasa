@@ -1,6 +1,7 @@
 const express = require('express');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+require('dotenv').config();
 
 const GOOGLE_AUTH_OPTIONS = {
 	callbackURL: '/auth/google/callback',
